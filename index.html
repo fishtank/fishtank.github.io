@@ -6,12 +6,11 @@
             #fishtank {
                 width: 100%; height: 100%;
                 background-color: aqua;
-                padding: 1em 0 0;
             }
             @keyframes swimming {
               0% { transform: translateY(0); }
-              33% { transform: translateY(-0.5em); }
-              67% { transform: translateY(0.5em); }
+              33% { transform: translateY(-50%); }
+              67% { transform: translateY(50%); }
               100% { transform: translateY(0); }
             }
             marquee:not(#crab) {
@@ -20,6 +19,7 @@
               animation-iteration-count: infinite;
               animation-timing-function: ease;
             }
+            marquee { font-size: 8vh; padding: 1vh 0; }
             #fish1 { color: red; animation-delay: 0; }
             #fish2 { color: orange; animation-delay: 0.8s; }
             #fish3 { color: blue; animation-delay: 0.4s; }
