@@ -37,6 +37,7 @@
             #fish5 { color: green; animation-delay: 0.8s; }
             #fish6 { color: gold; animation-delay: 1.8s; }
             #fish7 { color: brown; animation-delay: 0.6s; }
+            #no-swim-zone { background-color: aqua; height: 2em; position: absolute; bottom: 2em; width: 100%; }
             #crab  { color: red; position: absolute; bottom: 2em; width: 100%; }
         </style>
     </head>
@@ -50,7 +51,7 @@
                 <marquee id="fish5" direction="right" scrollamount=5>&gt;&lt;&gt;</marquee>
                 <marquee id="fish6" scrollamount=6>&lt;&gt;&lt;</marquee>
                 <marquee id="fish7" direction="right" scrollamount=8>&gt;&lt;&gt;</marquee>
-                <br><br>
+                <div id="no-swim-zone"></div>
                 <marquee id="crab" behavior="alternate" scrollamount="4"> (\/)O_o(\/) </marquee>
             </div>
             <div id="sand">&nbsp;</div>
