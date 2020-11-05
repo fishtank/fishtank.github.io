@@ -20,18 +20,20 @@
             }
             @keyframes swimming {
               0% { transform: translateY(0); }
-              33% { transform: translateY(-0.5em); }
-              67% { transform: translateY(0.5em); }
+              20% { transform: translateY(-0.5em); }
+              40% { transform: translateY(0); }
+              60% { transform: translateY(0.5em); }
+              80% { transform: translateY(-0.25em); }
               100% { transform: translateY(0); }
             }
             marquee:not(#crab) {
               animation-name: swimming;
-              animation-duration: 2s;
+              animation-duration: 3s;
               animation-iteration-count: infinite;
               animation-timing-function: ease;
             }
             #fish1 { color: red; animation-delay: 0; }
-            #fish2 { color: orange; animation-delay: 0.8s; }
+            #fish2 { color: orange; animation-delay: 0.8s; animation-duration: 5s !important; }
             #fish3 { color: blue; animation-delay: 0.4s; }
             #fish4 { color: purple; animation-delay: 1.6s; }
             #fish5 { color: green; animation-delay: 0.8s; }
